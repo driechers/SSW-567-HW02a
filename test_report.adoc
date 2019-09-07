@@ -1,0 +1,17 @@
+The initial testing found that the classify triangle function always returns InvalidInput below is the table with the results of each individual test.
+
+|===
+| Test Id                  | Input         | Expected Result | Actual Result  | Pass / Fail
+| testEquilateralTriangles | (1,1,1)       | 'Equilateral'   | 'InvalidInput' | Fail
+| testIsocelesTriangle     | (2,2,3)       | 'Isoceles'      | 'InvalidInput' | Fail
+| testScaleneTriangle      | (2,3,4)       | 'Scalene'       | 'InvalidInput' | Fail
+| testNotATriangleA        | (1,1,2)       | 'NotATriangle'  | 'InvalidInput' | Fail
+| testNotATriangleB        | (1,3,1)       | 'NotATriangle'  | 'InvalidInput' | Fail
+| testNotATriangleC        | (0,1,2)       | 'NotATriangle'  | 'InvalidInput' | Fail
+| testNotATriangleD        | (0,0,0)       | 'NotATriangle'  | 'InvalidInput' | Fail
+| testRightTriangleA       | (3,4,5)       | 'Right'         | 'InvalidInput' | Fail
+| testRightTriangleB       | (5,3,4)       | 'Right'         | 'InvalidInput' | Fail
+| testInvalidA             | (5.1,3.1,4.1) | 'InvalidInput'  | 'InvalidInput' | Pass
+| testInvlaidB             | (-3,-4,-5)    | 'InvalidInput'  | 'InvalidInput' | Pass
+| testInvlaidC             | (300,400,500) | 'InvalidInput'  | 'InvalidInput' | Pass
+|===
